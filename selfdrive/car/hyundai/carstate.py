@@ -24,6 +24,8 @@ class CarState(CarStateBase):
     else:  # preferred and elect gear methods use same definition
       self.shifter_values = can_define.dv["LVR12"]["CF_Lvr_Gear"]
 
+    self.disengageByBrake = False
+
     #Auto detection for setup
     self.no_radar = CP.sccBus == -1
     self.lkas_button_on = True

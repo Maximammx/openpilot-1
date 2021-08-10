@@ -228,6 +228,8 @@ struct CarState {
 
   autoHold @51 : Int32;
 
+  disengageByBrake @52 :Bool;
+
   struct WheelSpeeds {
     # optional wheel speeds
     fl @0 :Float32;
