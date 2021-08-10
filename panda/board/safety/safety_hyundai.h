@@ -146,7 +146,6 @@ static int hyundai_rx_hook(CAN_FIFOMailBox_TypeDef *to_push) {
         controls_allowed = 1;
       }
       if (!cruise_engaged) {
-        disengageFromBrakes = false;
         controls_allowed = 0;
       }
       cruise_engaged_prev = cruise_engaged;
