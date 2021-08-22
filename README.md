@@ -31,7 +31,7 @@ The goal of this fork is to enhance the user driving experience for Hyundai vehi
 **sunnyhaibin's Modified Assistive Driving Safety (MADS) Mode**
 
 1. openpilot ALC and Hyundai SCC can be engaged independently of each other
-2. LFA button toggles openpilot ALC
+2. CRUISE (MAIN) button toggles openpilot ALC
 3. SET- button enables Hyundai SCC
 4. CANCEL button only disables Hyundai SCC
 5. CRUISE (MAIN) button disables openpilot completely when OFF (strictly enforced in panda safety code)
