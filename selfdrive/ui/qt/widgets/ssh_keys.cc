@@ -128,7 +128,7 @@ CarRecognition::CarRecognition() : AbstractControl("Force Car Recognition", "If 
     if (btn.text() == "SET" && carname.length()) {
       params.put("CarModel", carname.toStdString());
       params.put("CarModelAbb", carname.toStdString());
-      QProcess::execute("/data/openpilot/force_vehicle_set.sh");
+      QProcess::execute("/data/openpilot/force_car_set.sh");
       refresh(carname);
     } else {
       carname = "";
@@ -182,7 +182,7 @@ CarForceSet::CarForceSet() : AbstractControl("Force Car Recognition", "If the ve
         btnc.setText("DONE");
         btnc.setEnabled(false);
         params.put("CarModel", carname.toStdString());
-        QProcess::execute("/data/openpilot/force_vehicle_set.sh");
+        QProcess::execute("/data/openpilot/force_car_set.sh");
       }
     } else {
       params.remove("CarModel");
