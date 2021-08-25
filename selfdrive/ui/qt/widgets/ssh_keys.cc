@@ -68,8 +68,8 @@ void SshControl::getUserKeys(const QString &username) {
   request->sendRequest("https://github.com/" + username + ".keys");
 }
 
-// Features - Force Vehicle Recognition
-CarRecognition::CarRecognition() : AbstractControl("Force Vehicle Recognition", "If the vehicle cannot be recognized due to a fingerprint problem, select the vehicle and force recognition.", "") {
+// Features - Force Car Recognition
+CarRecognition::CarRecognition() : AbstractControl("Force Car Recognition", "If the vehicle cannot be recognized due to a fingerprint problem, select the vehicle and force recognition.", "") {
 
   // setup widget
   hlayout->addStretch(1);
@@ -155,7 +155,7 @@ void CarRecognition::refresh(QString carname) {
   }
 }
 
-CarForceSet::CarForceSet() : AbstractControl("Force Vehicle Recognition", "If the vehicle is not recognized due to a fingerprint problem, enter the vehicle name to force recognition.\n\nInput method) Refer to the following and enter only the vehicle name in capital letters.\nGENESIS, GENESIS_G70, GENESIS_G80, GENESIS_G90, AVANTE, I30, SONATA, SONATA_HEV, SONATA19, SONATA19_HEV, KONA, KONA_EV, KONA_HEV, IONIQ_EV, IONIQ_HEV, SANTA_FE, PALISADE, VELOSTER, GRANDEUR_IG, GRANDEUR_IG_HEV, GRANDEUR_IG_FL, GRANDEUR_IG_FL_HEV, NEXO, K3, K5, K5_HEV, SPORTAGE, SORENTO, STINGER, NIRO_EV, NIRO_HEV, CEED, K7, K7_HEV, SELTOS, SOUL_EV", "../assets/offroad/icon_shell.png") {
+CarForceSet::CarForceSet() : AbstractControl("Force Car Recognition", "If the vehicle is not recognized due to a fingerprint problem, enter the vehicle name to force recognition.\n\nInput method) Refer to the following and enter only the vehicle name in capital letters.\nGENESIS, GENESIS_G70, GENESIS_G80, GENESIS_G90, AVANTE, I30, SONATA, SONATA_HEV, SONATA19, SONATA19_HEV, KONA, KONA_EV, KONA_HEV, IONIQ_EV, IONIQ_HEV, SANTA_FE, PALISADE, VELOSTER, GRANDEUR_IG, GRANDEUR_IG_HEV, GRANDEUR_IG_FL, GRANDEUR_IG_FL_HEV, NEXO, K3, K5, K5_HEV, SPORTAGE, SORENTO, STINGER, NIRO_EV, NIRO_HEV, CEED, K7, K7_HEV, SELTOS, SOUL_EV", "../assets/offroad/icon_shell.png") {
 
   // setup widget
   //hlayout->addStretch(1);

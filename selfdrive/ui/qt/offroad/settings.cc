@@ -301,7 +301,9 @@ QWidget * network_panel(QWidget * parent) {
 FeaturesPanel::FeaturesPanel(QWidget* parent) : QWidget(parent) {
   QVBoxLayout *layout = new QVBoxLayout(this);
 
+  layout->addWidget(horizontal_line());
   layout->addWidget(new CarRecognition());
+  layout->addWidget(horizontal_line());
 }
 
 void SettingsWindow::showEvent(QShowEvent *event) {
