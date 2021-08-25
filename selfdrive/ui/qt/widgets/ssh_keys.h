@@ -32,3 +32,10 @@ private:
   void refresh();
   void getUserKeys(const QString &username);
 };
+
+// Force Car Recognition
+class CarRecognition : public AbstractControl {
+  Q_OBJECT
+
+public:
+  CarRecognition();
