@@ -330,18 +330,18 @@ class CarInterface(CarInterfaceBase):
     if self.low_speed_alert:
       events.add(car.CarEvent.EventName.belowSteerSpeed)
 
-    self.CS.disengageByBrake = self.CS.disengageByBrake or ret.disengageByBrake
+    #self.CS.disengageByBrake = self.CS.disengageByBrake or ret.disengageByBrake
 
     enable_pressed = False
     enable_from_brake = False
 
-    if self.CS.disengageByBrake and not ret.brakePressed and self.CS.lfaEnabled:
-      enable_pressed = True
-      enable_from_brake = True
+    #if self.CS.disengageByBrake and not ret.brakePressed and self.CS.lfaEnabled:
+      #enable_pressed = True
+      #enable_from_brake = True
 
-    if not ret.brakePressed:
-      self.CS.disengageByBrake = False
-      ret.disengageByBrake = False
+    #if not ret.brakePressed:
+      #self.CS.disengageByBrake = False
+      #ret.disengageByBrake = False
 
     # handle button presses
     for b in ret.buttonEvents:

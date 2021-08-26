@@ -26,7 +26,7 @@ class CarState(CarStateBase):
     self.lfaEnabled = False
     self.leftBlinkerOn = False
     self.rightBlinkerOn = False
-    self.disengageByBrake = False
+    #self.disengageByBrake = False
     self.belowLaneChangeSpeed = True
     self.automaticLaneChange = True
 
