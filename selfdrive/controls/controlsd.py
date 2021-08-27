@@ -81,7 +81,7 @@ class Controls:
     print("Waiting for CAN messages...")
     get_one_can(self.can_sock)
 
-    self.CI, self.CP = get_car(self.can_sock, self.pm.sock['sendcan'])
+    self.CI, self.CP, candidate = get_car(self.can_sock, self.pm.sock['sendcan'])
 
     # read params
     self.is_metric = params.get_bool("IsMetric")
@@ -113,7 +113,7 @@ class Controls:
     self.AM = AlertManager()
     self.events = Events()
 
-    self.LoC = LongControl(self.CP, self.CI.compute_gb)
+    self.LoC = LongControl(self.CP, self.CI.compute_gb, candidate)
     self.VM = VehicleModel(self.CP)
 
     if self.CP.steerControlType == car.CarParams.SteerControlType.angle:
