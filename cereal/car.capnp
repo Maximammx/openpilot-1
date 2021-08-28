@@ -111,12 +111,12 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     highCpuUsage @105;
 
     driverMonitorLowAccDEPRECATED @68;
-    manualSteeringRequired @105;
-    manualLongitudinalRequired @106;
-    silentPedalPressed @107;
-    silentButtonEnable @108;
-    silentBrakeHold @109;
-    silentWrongGear @110;
+    manualSteeringRequired @106;
+    manualLongitudinalRequired @107;
+    silentPedalPressed @108;
+    silentButtonEnable @109;
+    silentBrakeHold @110;
+    silentWrongGear @111;
 
     radarCanErrorDEPRECATED @15;
     radarCommIssueDEPRECATED @67;
